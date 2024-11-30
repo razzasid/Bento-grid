@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(232, 232, 232);
+  padding: 2em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: grid;
+  grid-gap: 3em;
+}
+
+.card-purple {
+  width: 100%;
+  background-color: var(--Purple-500);
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--White);
+  border-radius: 10px;
+}
+
+.card-purple h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.card-purple p {
+  font-size: 2rem;
+}
+
+.highlight {
+  color: var(--Yellow-500);
+}
+.five-star-img {
+  width: 60%;
+}
+
+.card-2 {
+  width: 100%;
+  padding: 2em;
+  font-size: 2rem;
+  background-color: var(--White);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-2 img {
+  width: 100%;
+}
+
+.card-3 {
+  width: 100%;
+  height: 320px;
+  padding: 1.5em;
+  font-size: 2rem;
+  background-color: var(--Yellow-500);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-3 h1 {
+  margin-bottom: 1em;
+}
+
+.card-3 img {
+  width: 80%;
+}
+
+.card-4 {
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  place-items: center;
+  gap: 1em;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: var(--Purple-100);
+  border-radius: 10px;
+}
+
+.card-4 p {
+  font-size: 2rem;
+}
+
+.card-4 img {
+  width: 100%;
+}
+
+.card-5 {
+  width: 100%;
+  background-color: var(--Purple-500);
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--White);
+  border-radius: 10px;
+}
+
+.card-5 img {
+  width: 90%;
+}
+
+.card-6 {
+  width: 100%;
+  padding: 2em;
+  font-size: 2rem;
+  background-color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.card-6 h1 {
+  font-size: 4rem;
+}
+
+.card-6 img {
+  width: 60%;
+}
+
+.card-7 {
+  width: 100%;
+  background-color: var(--Yellow-100);
+  padding: 2em;
+  font-size: 3rem;
+  color: var(--Black);
+  border-radius: 10px;
+}
+
+.quicker {
+  color: var(--Purple-500);
+}
+
+.card-7 img {
+  width: 100%;
+}
+
+.card-8 {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 2rem;
+  background-color: var(--Yellow-500);
+  border-radius: 10px;
+}
+
+.card-8 img {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 3em;
+}
+
+@media (min-width: 780px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-2 {
+    display: grid;
+  }
+
+  .card-purple {
+    width: 100%;
+    grid-column: 2 / 4;
+  }
+
+  .card-purple h1 {
+    font-size: 6rem;
+  }
+
+  .card-purple img {
+    width: 40%;
+  }
+
+  .card-2 {
+    /* border: 2px solid blue; */
+    padding: 1em;
+    font-size: 2rem;
+  }
+
+  .card-2 img {
+    width: 140%;
+  }
+
+  .card-4 {
+    grid-column: 4 / 5;
+
+    grid-row: 1 / 3;
+  }
+
+  .card-5 {
+    flex-direction: row;
+    gap: 0;
+    padding: 1em;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+  }
+
+  .card-5 img {
+    width: 40%;
+  }
+
+  .card-4 {
+    padding: 3rem;
+    text-align: left;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .card-4 h1 {
+    font-size: 4rem;
+  }
+
+  .card-4 img {
+    width: 150%;
+    margin-left: 5em;
+  }
+  .card-6 {
+    padding: 1em;
+  }
+
+  .card-6 h1 {
+    font-size: 2em;
+  }
+
+  .card-6 img {
+    width: 100%;
+    margin-top: 0em;
+  }
+
+  .grid-2 {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+  .card-7 {
+    padding: 1em;
+  }
+  .card-7 img {
+    margin-top: 1em;
+  }
+  .card-8 {
+    padding: 1em;
+    font-size: 3rem;
+  }
+}
